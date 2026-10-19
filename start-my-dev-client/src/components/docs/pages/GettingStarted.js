@@ -6,6 +6,10 @@ const GettingStarted = () => {
       <Helmet>
         <title>Getting Started | StartMyDev</title>
         <meta name="description" content="Learn how to get started with StartMyDev configuration generator for your development projects." />
+        <link rel="canonical" href="https://start-my-dev-dashboard.vercel.app/docs" />
+        <meta property="og:title" content="Getting Started with StartMyDev" />
+        <meta property="og:description" content="Learn how to configure and download your first project setup script with StartMyDev." />
+        <meta property="og:url" content="https://start-my-dev-dashboard.vercel.app/docs" />
       </Helmet>
       <h2 className="fw-bold">Getting Started</h2>
       <p>

@@ -291,6 +291,10 @@ const ScriptGenerator = () => {
       <Helmet>
         <title>Script Generator | StartMyDev</title>
         <meta name="description" content="Generate custom windows and linux scripts for your development stack." />
+        <link rel="canonical" href="https://start-my-dev-dashboard.vercel.app/script-generator" />
+        <meta property="og:title" content="Project Setup Script Generator | StartMyDev" />
+        <meta property="og:description" content="Configure and download project setup scripts for common developer stacks on Windows and Linux." />
+        <meta property="og:url" content="https://start-my-dev-dashboard.vercel.app/script-generator" />
       </Helmet>
 
       <div className="text-center mb-5">

@@ -58,6 +58,12 @@ const Home = () => {
           name="description"
           content="Instantly generate PowerShell and Bash setup scripts for React, Angular, Spring Boot, and Flask projects."
         />
+        <link rel="canonical" href="https://start-my-dev-dashboard.vercel.app/" />
+        <meta property="og:title" content="StartMyDev | Automate Your Project Setup" />
+        <meta property="og:description" content="Generate project setup scripts for popular stacks on Windows and Linux." />
+        <meta property="og:url" content="https://start-my-dev-dashboard.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta name="author" content="Sai Krishna Chaitanya" />
         <meta
           name="keywords"
           content="developer tools, project generator, script generator, powershell, bash, automation"

@@ -4,6 +4,7 @@ import ScriptGenerator from "../components/ScriptGenerator";
 import DocLayout from "../components/docs/DocLayout";
 import GettingStarted from "../components/docs/pages/GettingStarted";
 import PrivacyAndSecurity from "../components/docs/pages/PrivacyAndSecurity";
+import About from "../components/About";
 import Ps5Setup from "../components/docs/pages/Ps5-Setup";
 import Ps7Setup from "../components/docs/pages/Ps7-Setup";
 import LinuxSetup from "../components/docs/pages/Linux-Setup";
@@ -12,6 +13,7 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
       <Route path="/script-generator" element={<ScriptGenerator />} />
       <Route path="/docs" element={<DocLayout />}>
         <Route index element={<GettingStarted />} />

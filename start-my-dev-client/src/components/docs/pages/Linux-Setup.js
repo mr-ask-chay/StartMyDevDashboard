@@ -43,6 +43,10 @@ export const LinuxSetup = () => {
             <Helmet>
                 <title>{selectedScript.label} Linux Setup | StartMyDev</title>
                 <meta name="description" content={`Learn how to setup and run ${selectedScript.label} on Linux using StartMyDev generated Bash scripts.`} />
+                <link rel="canonical" href="https://start-my-dev-dashboard.vercel.app/docs/linux" />
+                <meta property="og:title" content={`${selectedScript.label} Linux Setup | StartMyDev`} />
+                <meta property="og:description" content={`Configure a ${selectedScript.label} project on Linux with StartMyDev Bash scripts.`} />
+                <meta property="og:url" content="https://start-my-dev-dashboard.vercel.app/docs/linux" />
             </Helmet>
             <div className="row align-items-center mb-4">
                 <div className="col-12 col-md-8">
