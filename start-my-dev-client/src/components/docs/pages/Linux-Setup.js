@@ -5,7 +5,6 @@ import { windowsData } from "./scriptData";
 
 export const LinuxSetup = () => {
     const scriptLabels = windowsScriptDocs?.linux || [];
-    const scriptConfigs = windowsData?.linux || [];
 
     const [selectedLabel, setSelectedLabel] = useState(
         scriptLabels.find((s) => s.label === "SpringBoot")?.label ||
@@ -16,6 +15,7 @@ export const LinuxSetup = () => {
     const [selectedScript, setSelectedScript] = useState(null);
 
     useEffect(() => {
+        const scriptConfigs = windowsData?.linux || [];
         let match = scriptConfigs.find((s) => s.label === selectedLabel);
 
         if (!match) {
@@ -28,7 +28,7 @@ export const LinuxSetup = () => {
         }
 
         setSelectedScript(match);
-    }, [selectedLabel, scriptConfigs]);
+    }, [selectedLabel]);
 
     const handleSelect = (e) => {
         setSelectedLabel(e.target.value);

@@ -5,7 +5,6 @@ import { windowsData } from "./scriptData";
 
 export const Ps5Setup = () => {
   const scriptLabels = windowsScriptDocs?.ps7 || [];
-  const scriptConfigs = windowsData?.ps7 || [];
 
   const [selectedLabel, setSelectedLabel] = useState(
     scriptLabels.find((s) => s.label === "SpringBoot")?.label ||
@@ -16,6 +15,7 @@ export const Ps5Setup = () => {
   const [selectedScript, setSelectedScript] = useState(null);
 
   useEffect(() => {
+    const scriptConfigs = windowsData?.ps7 || [];
     let match = scriptConfigs.find((s) => s.label === selectedLabel);
 
     if (!match) {
@@ -28,7 +28,7 @@ export const Ps5Setup = () => {
     }
 
     setSelectedScript(match);
-  }, [selectedLabel, scriptConfigs]);
+  }, [selectedLabel]);
 
   const handleSelect = (e) => {
     setSelectedLabel(e.target.value);

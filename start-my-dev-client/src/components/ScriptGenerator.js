@@ -120,10 +120,7 @@ const ScriptGenerator = () => {
   };
 
   const isFullstack = form.applicationType === "fullstack";
-  const isFrontend = form.applicationType === "frontend" || isFullstack;
-  const isBackend = form.applicationType === "backend" || isFullstack;
   const isSpringBoot = form.projectType.includes("Spring Boot");
-  const isFlask = form.projectType === "Flask";
 
   const getFrontendPathLabel = () => {
     if (form.applicationType === "frontend") {
