@@ -42,6 +42,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="d-flex flex-wrap justify-content-center justify-content-md-end gap-3 mt-2">
+              <a href="https://mraskchay.vercel.app/" className="footer-link small">Sai Krishna Chaitanya portfolio</a>
               <a href="https://pdf-fe-kappa.vercel.app/" className="footer-link small">Unclasp PDF tools</a>
               <a href="https://internationalization-d2aa6.web.app/en/" className="footer-link small">Angular i18n demo</a>
               <a href="https://github.com/mr-ask-chay/git-commit-summary" className="footer-link small">Git Commit Summary</a>

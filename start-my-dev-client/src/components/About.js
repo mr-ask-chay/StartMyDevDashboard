@@ -70,7 +70,8 @@ const About = () => (
         Find Sai Krishna Chaitanya on{" "}
         <a href="https://github.com/mr-ask-chay">GitHub</a>,{" "}
         <a href="https://linkedin.com/in/sai-krishna-annam-046851167/">LinkedIn</a>, or{" "}
-        <a href="https://linktr.ee/MR_ASK_Chay">Linktree</a>.
+        <a href="https://linktr.ee/MR_ASK_Chay">Linktree</a>. See the{" "}
+        <a href="https://mraskchay.vercel.app/">personal portfolio</a> for more projects.
       </p>
     </article>
   </main>
