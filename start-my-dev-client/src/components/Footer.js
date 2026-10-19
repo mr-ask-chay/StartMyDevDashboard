@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaHeart, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -27,22 +27,16 @@ const Footer = () => {
 
           {/* Social & Creator */}
           <div className="col-md-4 text-center text-md-end">
-            <div className="d-flex justify-content-center justify-content-md-end align-items-center gap-3 mb-2">
-              <a href="https://github.com/mr-ask-chay" className="social-icon-link" aria-label="Sai Krishna Chaitanya on GitHub" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-              <a href="https://linkedin.com/in/sai-krishna-annam-046851167/" className="social-icon-link" aria-label="Sai Krishna Chaitanya on LinkedIn" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            </div>
             <div className="small text-muted">
               Made with <FaHeart className="text-danger mx-1" size={12} /> by
               <a
-                href="https://pdf-fe-kappa.vercel.app/about"
-                aria-label="About Sai Krishna Chaitanya, creator of StartMyDev"
+                href="https://mraskchay.vercel.app/"
                 className="fw-semibold text-decoration-none ms-1 text-primary-hover"
               >
                 Sai Krishna Chaitanya
               </a>
             </div>
             <div className="d-flex flex-wrap justify-content-center justify-content-md-end gap-3 mt-2">
-              <a href="https://mraskchay.vercel.app/" className="footer-link small">Sai Krishna Chaitanya portfolio</a>
               <a href="https://pdf-fe-kappa.vercel.app/" className="footer-link small">Unclasp PDF tools</a>
               <a href="https://internationalization-d2aa6.web.app/en/" className="footer-link small">Angular i18n demo</a>
               <a href="https://github.com/mr-ask-chay/git-commit-summary" className="footer-link small">Git Commit Summary</a>
@@ -87,21 +81,6 @@ const Footer = () => {
 
         .footer-link:hover {
           color: var(--color-primary);
-        }
-
-        .social-icon-link {
-          color: var(--color-text-muted-light);
-          font-size: 1.1rem;
-          transition: all 0.2s ease;
-        }
-
-        .dark-mode .social-icon-link {
-          color: var(--color-text-muted-dark);
-        }
-
-        .social-icon-link:hover {
-          color: var(--color-primary);
-          transform: translateY(-2px);
         }
 
         .text-primary-hover {
