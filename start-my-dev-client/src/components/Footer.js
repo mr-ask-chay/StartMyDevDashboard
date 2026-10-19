@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaHeart, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -20,27 +20,26 @@ const Footer = () => {
             <div className="d-flex justify-content-center gap-3">
               <Link to="/script-generator" className="footer-link small">Generator</Link>
               <Link to="/docs" className="footer-link small">Documentation</Link>
-              <a href="https://github.com/otaku0304/StartMyDevDashboard" target="_blank" rel="noopener noreferrer" className="footer-link small">GitHub</a>
+              <Link to="/about" className="footer-link small">About the author</Link>
+              <a href="https://github.com/mr-ask-chay/StartMyDevDashboard" target="_blank" rel="noopener noreferrer" className="footer-link small">GitHub</a>
             </div>
           </div>
 
           {/* Social & Creator */}
           <div className="col-md-4 text-center text-md-end">
-            <div className="d-flex justify-content-center justify-content-md-end align-items-center gap-3 mb-2">
-              <a href="#" className="social-icon-link"><FaGithub /></a>
-              <a href="#" className="social-icon-link"><FaTwitter /></a>
-              <a href="#" className="social-icon-link"><FaLinkedin /></a>
-            </div>
             <div className="small text-muted">
               Made with <FaHeart className="text-danger mx-1" size={12} /> by
               <a
-                href="https://www.google.com/search?q=mr_ask_chay"
+                href="https://mraskchay.vercel.app/"
                 className="fw-semibold text-decoration-none ms-1 text-primary-hover"
-                target="_blank"
-                rel="noopener noreferrer"
               >
-                mr_ask_chay
+                Sai Krishna Chaitanya
               </a>
+            </div>
+            <div className="d-flex flex-wrap justify-content-center justify-content-md-end gap-3 mt-2">
+              <a href="https://pdf-fe-kappa.vercel.app/" className="footer-link small">Unclasp PDF tools</a>
+              <a href="https://internationalization-d2aa6.web.app/en/" className="footer-link small">Angular i18n demo</a>
+              <a href="https://github.com/mr-ask-chay/git-commit-summary" className="footer-link small">Git Commit Summary</a>
             </div>
           </div>
         </div>
@@ -82,21 +81,6 @@ const Footer = () => {
 
         .footer-link:hover {
           color: var(--color-primary);
-        }
-
-        .social-icon-link {
-          color: var(--color-text-muted-light);
-          font-size: 1.1rem;
-          transition: all 0.2s ease;
-        }
-
-        .dark-mode .social-icon-link {
-          color: var(--color-text-muted-dark);
-        }
-
-        .social-icon-link:hover {
-          color: var(--color-primary);
-          transform: translateY(-2px);
         }
 
         .text-primary-hover {

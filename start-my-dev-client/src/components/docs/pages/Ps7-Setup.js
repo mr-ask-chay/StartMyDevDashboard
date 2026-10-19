@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { windowsScriptDocs } from "../scriptOptions";
 import { windowsData } from "./scriptData";
 
@@ -39,6 +40,14 @@ export const Ps5Setup = () => {
 
   return (
     <div className="ps-3 pe-3">
+      <Helmet>
+        <title>Windows PowerShell 7 Project Setup | StartMyDev</title>
+        <meta name="description" content="Browse StartMyDev project setup scripts for Windows PowerShell 7 and configure a ready-to-run development environment." />
+        <link rel="canonical" href="https://start-my-dev-dashboard.vercel.app/docs/windows/ps7" />
+        <meta property="og:title" content="Windows PowerShell 7 Setup Scripts | StartMyDev" />
+        <meta property="og:description" content="Configure Windows PowerShell 7 setup scripts for common frontend and backend stacks." />
+        <meta property="og:url" content="https://start-my-dev-dashboard.vercel.app/docs/windows/ps7" />
+      </Helmet>
       <div className="d-flex justify-content-between align-items-center">
         <h2 className="fw-bold text-dark mb-4">
           {selectedScript.fileName} Overview
